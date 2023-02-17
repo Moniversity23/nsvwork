@@ -1,0 +1,3456 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang>
+
+    <head><script src="/rder-theere-non-Cawdor-three-How-Fath-Action-mos" async></script>
+
+        
+        
+        <script>
+            /*
+             Strategically place:
+             markUserTime('some event');
+             Through your code to get measurements for when various activities complete.  It
+             will also generate timeline events so you can see them in Chrome's dev tools.
+             A good use case is to add them inline to sections of your site that are
+             above-the fold (right after the menu, right after the main story, etc) and also
+             in the onload handler for any critical above-the-fold images.
+             */
+            ;(function () {
+                var w = typeof window != 'undefined' ? window : exports,
+                        marks = [];
+                w.performance || (w.performance = {});
+                w.performance.now || (
+                        w.performance.now = performance.now || performance.webkitNow ||
+                                performance.msNow || performance.mozNow);
+                if (!w.performance.now){
+                    var s = Date.now ? Date.now() : +(new Date());
+                    if (performance.timing && performance.timing)
+                        s = performance.timing.navigationStart
+                    w.performance.now = (function(){
+                        var n = Date.now ? Date.now() : +(new Date());
+                        return n-s;
+                    });
+                }
+                w.performance.mark || (
+                        w.performance.mark =
+                                w.performance.webkitMark ? w.performance.webkitMark :
+                                        (function (l) {
+                                            marks.push({'name':l,'entryType':'mark','startTime':w.performance.now(),'duration':0});
+                                        }));
+                w.performance.getEntriesByType || (
+                        w.performance.getEntriesByType =
+                                w.performance.webkitGetEntriesByType ? w.performance.webkitGetEntriesByType :
+                                        (function (t) {
+                                            return t == 'mark' ? marks : undefined;
+                                        }));
+            }());
+            window.markUserTime = function(l) {
+                var raf = window['requestAnimationFrame'] ||
+                        (function(callback){setTimeout(callback, 0);});
+                raf(function(){
+                    window.performance.mark(l);
+                    if (window['console'] && console['timeStamp'])
+                        console.timeStamp(l);
+                });
+            };
+        </script>
+
+        
+
+
+
+
+    <script></script>
+
+
+
+
+    <link rel="canonical" href="https://www.nsbank.com/"/>
+
+
+
+
+
+    
+    <script type="text/javascript" src="/retention.js" defer="defer"></script>
+
+    
+    <script>
+        markUserTime('loginInjections');
+    </script>
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+
+
+
+
+<script></script>
+
+
+<script>
+    markUserTime('Global Head Loaded');
+</script>
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+    <link rel="canonical" href="https://www.nsbank.com/"/>
+
+
+
+<title>It Matters WHO You Bank With | Nevada State Bank</title>
+
+
+<meta name="description" content="Nevada State Bank offers personal and business banking services including checking and savings accounts, mortgage and auto loans, credit cards, and more. With branches across the state including Las Vegas, Reno, Carson City and Elko, we're here for you."/>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+
+
+<meta property="og:type"/>
+<meta property="og:title" content="en"/>
+
+<meta property="og:description" content="Nevada State Bank offers personal and business banking services including checking and savings accounts, mortgage and auto loans, credit cards, and more. With branches across the state including Las Vegas, Reno, Carson City and Elko, we&#39;re here for you."/>
+
+
+
+<meta name="tags"/>
+
+
+
+
+
+
+
+
+
+<script>
+    markUserTime('NSB Global Head Loaded');
+</script>
+
+
+
+    
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+
+<link rel="stylesheet" href="/etc.clientlibs/nsb/nsbank/clientlibs/nsb_base.min.161366b416acb430fd58719150257314.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/zbc/commons/vendor/spinner.min.d41d8cd98f00b204e9800998ecf8427e.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/nsb/nsbank/clientlibs/nsb_global.min.3f00c9363f4482cb25a338a584ed2269.css" type="text/css">
+
+
+
+    
+    
+<script type="text/javascript" src="/etc.clientlibs/nsb/nsbank/clientlibs/nsb_base.min.591a68a28b24e377713f43018a46d44e.js"></script>
+
+
+
+
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/nsb/nsbank/clientlibs/nsb_page_landing.min.597df6aa2762641f24b7e451826df383.css" type="text/css">
+
+
+
+
+
+
+
+
+<script>
+    markUserTime('NSB Template Head Loaded');
+</script>
+
+
+        
+        
+
+    
+    
+
+
+
+
+
+
+
+        
+        
+
+    </head>
+
+    
+    
+    
+    
+    
+    
+
+    <body class="mode-disabled" data-template="user_landing" data-usersegment="personal" data-affiliate="nsb" data-home="nsbank" data-current-runmodes="prod,s7connect,crx3,nosamplecontent,publish,crx3tar" data-aa-pagetype="nsb/nsbank/components/structure/pages/user_landing">
+
+        
+        
+
+<div id="zbc-media-selector"></div>
+
+<!-- Modal Compare Window -->
+<div class="modal fade" id="modal-compare" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-compare-header" id="modal-compare-header">
+            <nav class="modal-compare-nav">
+                <div class="modal-compare-nav__left">
+                    <button class="button-compare-counter" data-dismiss="modal"><span class="button-compare-counter__text">Compare</span><span class="button-compare-counter__badge">0</span></button><button class="button button-smaller" id="button-compare-clear-all">Clear All</button>
+                </div><!-- end modal-compare-nav__left -->
+                <div class="modal-compare-nav__right">
+                    <button data-dismiss="modal" aria-label="close compare"><span class="close-icon-large"><span></span><span></span></span></button>
+                </div><!-- end modal-compare-nav__right -->
+            </nav><!-- end modal-compare-nav -->
+            <div class="modal-compare-alert">
+                <div class="modal-compare-alert__content" id="alert-max-reached">
+                    <div class="modal-compare-alert__icon"><span class="fa fa-thumbs-o-up"></span></div>
+                    <div class="modal-compare-alert__message">You can compare maximum three products at a time. Please adjust the selection accordingly.<br/>
+                        <button class="button-outline-light button-smaller" data-dismiss="modal">Compare</button>
+                    </div><!-- end modal-compare-alert__message -->
+                </div><!-- end modal-compare-alert__content -->
+                <div class="modal-compare-alert__content" id="alert-remove-selection">
+                    <div class="modal-compare-alert__icon"><span class="fa fa-scissors"></span></div>
+                    <div class="modal-compare-alert__message">You can only compare three products at a time. Unselect an account or use clear all to start over.</div>
+                </div><!-- end modal-nav-alert__wrapper -->
+                <div class="modal-compare-alert__hide"><button class="button button-small">Hide<span class="close-icon-small"><span></span><span></span></span></button></div><!-- end modal-compare-alert__hide -->
+            </div><!-- end modal-compare-alert -->
+        </div><!-- end modal-compare-header -->
+        <div class="modal-content">
+
+        </div><!-- end modal-content -->
+    </div><!-- end modal-dialog -->
+</div><!-- end modal -->
+
+
+<div id="modal-state-table" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-left"><h6>Choose Your State</h6></div>
+                <div class="modal-header-right"><button data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+            </div><!-- end modal-header -->
+            <div class="modal-body">
+                <p>Rates and products offered may differ from state to state. To see the rate and offering available to you, please select the state where you bank. (Your privacy is important to us&mdash;see our <a href="https://www.nsbank.com/privacy_notice.pdf">Privacy Notice</a>).</p>
+                <select id="modal-state-table__select" class="form-control" aria-label="choose your state">
+                    <option value="">--- Choose Your State ---</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+            <div class="modal-footer"><button type="button" data-dismiss="modal" class="button button-small">Cancel</button><button id="modal-state-table__submit" type="submit" class="button-green button-small" data-dismiss="modal">Submit</button></div>
+        </div><!-- end modal-content -->
+    </div><!-- end modal-dialog -->
+</div><!-- end modal -->
+
+<div class="site-wrap">
+    <a href="#content-area" class="adaOffScreen" alt="Skip to Content">Skip to Content</a>
+    <div class="nav-context">
+        
+    
+
+
+
+
+<header class="main-header main-header__personal">
+	<!-- Alert Banner -->
+	<div id="alert-banner-container">
+
+<div class="alert alert-banner alert-danger alert-dismissible" role="alert" data-alert-enabled="false">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <i class=" fa-2x"></i>
+    <p></p>
+</div></div>
+	<!-- Secondary Nav -->
+	<nav class="secondary-nav">
+		<ul class="secondary-nav__user-segment">
+
+			<!-- Place holder for the component -->
+			
+
+
+    
+        <li>
+            <a class="active user-segment_link" href="/personal/" data-segmentpath="personal">Personal</a>
+        </li>
+    
+
+    
+        <li>
+            <a class=" user-segment_link" href="business.html" data-segmentpath="business">Business</a>
+        </li>
+    
+
+    
+        <li>
+            <a class=" user-segment_link" href="/private/" data-segmentpath="private">Private</a>
+        </li>
+    
+
+
+
+
+
+
+		</ul><!-- end secondary-nav__user-segment -->
+		<ul class="secondary-nav__misc-links">
+			
+
+    
+        <li>
+            
+            <a href="/about-us/" data-external="false">About Us</a>
+        </li>
+    
+
+    
+        <li>
+            
+            <a href="https://careers.nsbank.com" data-external="true">Careers</a>
+        </li>
+    
+
+    
+        <li>
+            
+            <a href="/branch-locator/" data-external="false">Locations</a>
+        </li>
+    
+
+    
+        <li>
+            
+            <a href="/contact-us/" data-external="false">Contact Us</a>
+        </li>
+    
+
+		</ul><!-- end secondary-nav__misc-links -->
+	</nav><!-- end secondary-nav -->
+
+
+	
+
+	<!-- Main Nav -->
+	<div class="main-nav-container">
+		<nav class="main-nav">
+		<div class="main-nav__left">
+			<button type="button" class="main-nav__menu-button" data-toggle="main-nav-dropdown" data-target="#main-menu" aria-label="Toggle the menu" aria-haspopup="true" aria-expanded="false">
+				<span class="main-nav__menu-button__icon-bar"></span>
+				<span class="main-nav__menu-button__icon-bar"></span>
+				<span class="main-nav__menu-button__icon-bar"></span>
+			</button>
+		</div><!-- end main-nav__left -->
+
+		<div class="main-nav__logo">
+			
+			
+
+<a href="/personal/">
+    <img class="logo" src="nsvimg/nsb-logo-white-notag-r.png" alt="Nevada State Bank"/>
+</a>
+		</div>
+
+		<div class="main-nav__menu">
+			<div id="main-menu" class="main-menu">
+
+				<!-- Search -->
+				<div class="main-menu__search">
+					<form class="zbc-search-form" data-search-url="/search.html" data-aa-searchtrack="mobile site search">
+						<div class="form-group">
+							<div class="input-group">
+								<label class="sr-only" for="main-menu__search__input">search</label>
+								<input type="text" class="form-control main-menu__search__input zbc-search-query" id="main-menu__search__input" placeholder="Search" aria-label="Search"/>
+								<span class="input-group-btn">
+                                    <button type="submit" class="main-menu__search__button">
+                                        <img src="/content/dam/zbc/commons/layout-images/icon_search_white.svg" alt="Search the site"/>
+                                    </button>
+                                </span><!-- end input-group-btn -->
+							</div><!-- end input-group -->
+						</div>
+					</form>
+				</div><!-- end main-menu__search -->
+
+
+				
+				
+					<ul class="main-menu__user-segment active">
+						<li class="main-menu__dropdown">
+							<a href="#nogo" class="main-menu__user-segment-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">personal<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+							<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_primary">
+
+								<!--*/ This one is section homepage for user segments on mobile */-->
+								<li class="visible-xs-block">
+									<a href="#" class="main-menu__link user-segment_follow-link" data-segment-link="personal">Home<span class="main-menu__link-icon"><span></span><span></span></span></a>
+								</li>
+
+								
+								
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">bank<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/bank/" class="main-menu__link main-menu__link_category" data-external="false">ACCOUNTS &amp; SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/bank/checking/" data-external="false">Checking Accounts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/savings/" data-external="false">Savings, CDs, and Money Markets </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/" data-external="false">Credit Cards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/debit-cards/" data-external="false">Debit &amp; ATM Cards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/safe-deposit-box/" data-external="false">Safe Deposit Box </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/reorder-checks/" data-external="false">Reorder Checks Online </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/military/" data-external="false">Military Benefits </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/foreign-currency-exchange/" data-external="false">Foreign Currency Services </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/it-matters/digital-banking/" class="main-menu__link main-menu__link_category" data-external="false">DIGITAL BANKING SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/it-matters/digital-banking/" data-external="false">Personal Digital Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/mobile-banking/" data-external="false">Mobile Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/bill-pay/" data-external="false">Online Bill Pay </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/edocuments/" data-external="false">eDocuments </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/zelle/" data-external="false">Zelle<sup>®</sup> </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/mobile-alerts/" data-external="false">Mobile Alerts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/online-wire-transfers/" data-external="false">Online Wire Transfers </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/direct-connect/" data-external="false">Direct Connect </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/bank/specialty-banking/" class="main-menu__link main-menu__link_category" data-external="false">SPECIALTY BANKING SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/" data-external="false">The Private Bank by Nevada State Bank </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/professional-banking/" data-external="false">Professional Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/small-business/" data-external="false">Small Business Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/corporate-banking/" data-external="false">Corporate Banking </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/bank/" class="main-menu__link main-menu__link_category" data-external="false">HOW CAN WE HELP YOU?<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/bank/checking/checking-comparison-table/" data-external="false">Compare Checking Accounts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/savings/savings-comparison-table/" data-external="false">Compare Savings Accounts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/credit-card-comparison-table/" data-external="false">Compare Credit Cards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/" data-external="false">Enroll in Online Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/bill-pay/" data-external="false">Sign Up for Bill Pay </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/edocuments/" data-external="false">Go Paperless with eDocuments </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/bank/online-banking/mobile-alerts/" data-external="false">Learn About Mobile Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/invest/" data-external="false">Explore Wealth Management Options </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">borrow<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/borrow/" class="main-menu__link main-menu__link_category" data-external="false">LOAN PRODUCTS &amp; SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/borrow/" data-external="false">All Loan Products </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/residential-mortgage/" data-external="false">Residential Mortgage </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/home-equity-credit-line/" data-external="false">Home Equity Credit Line </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/auto-and-vehicle-loans/" data-external="false">Auto &amp; Vehicle Loans </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/personal-loans/" data-external="false">Personal Loans </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/prime-credit-line/" data-external="false">Prime Credit Line </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/borrow/credit-cards/" class="main-menu__link main-menu__link_category" data-external="false">CREDIT CARDS<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/vivid-rewards/" data-external="false">Vivid Rewards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/agility-cash/" data-external="false">Agility Cash </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/clarity/" data-external="false">Clarity </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/launch-secured/" data-external="false">Launch Secured  </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/premier/" data-external="false">Premier Visa Signature<sup>®</sup>  </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/elite/" data-external="false">Elite Visa Signature<sup>®</sup>  </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/reserve/" data-external="false">Reserve Visa Signature<sup>®</sup>  </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/credit-cards/digital-payments/" data-external="false">Digital Payments </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/borrow/" class="main-menu__link main-menu__link_category" data-external="false">HOW CAN WE HELP YOU?<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/borrow/residential-mortgage/" data-external="false">Buy or Refinance a Home </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/personal-loans/" data-external="false">Consolidate My Debt </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/auto-and-vehicle-loans/" data-external="false">Buy or Refinance a Vehicle </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/resources/get-started/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/borrow/residential-mortgage/find-a-mortgage-officer/" data-external="false">Find a Mortgage Officer </a>
+        </li>
+    
+        <li>
+            
+            <a href="/appointments/" data-external="false">Schedule an Appointment </a>
+        </li>
+    
+        <li>
+            
+            <a href="/branch-locator/" data-external="false">Locate a Branch or ATM </a>
+        </li>
+    
+        <li>
+            
+            <a href="/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">invest<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/nsb-wealth-advisors/" class="main-menu__link main-menu__link_category" data-external="false">NSB WEALTH ADVISORS<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/nsb-wealth-advisors/about-us/" data-external="false">About NSB Wealth Advisors </a>
+        </li>
+    
+        <li>
+            
+            <a href="/nsb-wealth-advisors/services/" data-external="false">NSB Wealth Advisor Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/nsb-wealth-advisors/services/investment-management/" data-external="false">Investment Management </a>
+        </li>
+    
+        <li>
+            
+            <a href="/nsb-wealth-advisors/services/insurance-services/" data-external="false">Insurance Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/nsb-wealth-advisors/services/digital-investing/" data-external="false">Digital Investing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/nsb-wealth-advisors/about-us/advisors/" data-external="false">Meet the Advisors </a>
+        </li>
+    
+        <li>
+            
+            <a href="/nsb-wealth-advisors/contact/" data-external="false">Contact NSB Wealth Advisors </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">resources<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/about-us/reports/" class="main-menu__link main-menu__link_category" data-external="false">NEWS YOU CAN USE<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/about-us/reports/chairmans-update/" data-external="false">Chairman's Update </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/ceo-letter/" data-external="false">Letter from Our CEO </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/apo/" data-external="false">A Positive Outlook </a>
+        </li>
+    
+        <li>
+            
+            <a href="/blog/two-cents-blog/" data-external="false">Two Cents Blog </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/resources/webinars/" data-external="false">Educational Webinars </a>
+        </li>
+    
+        <li>
+            
+            <a href="https://nevadasmallbusiness.com/" data-external="true">NevadaSmallBusiness.com </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/resources/financial-insights/" data-external="false">Financial Insights </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/about-us/resources/" class="main-menu__link main-menu__link_category" data-external="false">TOOLS &amp; RESOURCES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/personal/resources/calculators/" data-external="false">Financial Calculators </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/resources/faqs/" data-external="false">Frequently Asked Questions </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/resources/newsletter/" data-external="false">eNewsletter Sign Up </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/resources/bank-holidays/" data-external="false">Bank Holidays </a>
+        </li>
+    
+        <li>
+            
+            <a href="/safety/" data-external="false">FDIC Insurance </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/supplier-diversity/" data-external="false">Supplier Diversity </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/personal/resources/get-started/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    
+        <li>
+            
+            <a href="/appointments/" data-external="false">Schedule an Appointment </a>
+        </li>
+    
+        <li>
+            
+            <a href="/branch-locator/" data-external="false">Locate a Branch or ATM </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/borrow/residential-mortgage/find-a-mortgage-officer/" data-external="false">Find a Mortgage Officer </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+							</ul>
+						</li>
+					</ul>
+				
+					<ul class="main-menu__user-segment ">
+						<li class="main-menu__dropdown">
+							<a href="#nogo" class="main-menu__user-segment-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">business<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+							<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_primary">
+
+								<!--*/ This one is section homepage for user segments on mobile */-->
+								<li class="visible-xs-block">
+									<a href="#" class="main-menu__link user-segment_follow-link" data-segment-link="business">Home<span class="main-menu__link-icon"><span></span><span></span></span></a>
+								</li>
+
+								
+								
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">bank<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/bank/" class="main-menu__link main-menu__link_category" data-external="false">ACCOUNTS &amp; SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/bank/checking/" data-external="false">Checking Accounts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/savings/" data-external="false">Savings, CDs, &amp; Money Markets </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/credit-cards/" data-external="false">Credit Cards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/debit-cards/" data-external="false">Debit &amp; ATM Cards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/business-complete/" data-external="false">Business Complete </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/other-services/" data-external="false">Additional Banking Services </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/it-matters/digital-banking/" class="main-menu__link main-menu__link_category" data-external="false">DIGITAL BANKING SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/it-matters/digital-banking/" data-external="false">Business Digital Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/mobile-banking/" data-external="false">Mobile Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/online-banking/estatements/" data-external="false">eDocuments </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/online-banking/direct-connect/" data-external="false">Direct Connect with Bill Pay </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/online-banking/online-wire-transfers/" data-external="false">Online Wire Transfers </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/bank/specialty-banking/" class="main-menu__link main-menu__link_category" data-external="false">SPECIALTY BANKING SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/small-business/" data-external="false">Small Business Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/corporate-banking/" data-external="false">Corporate Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/commercial-real-estate/" data-external="false">Commercial Real Estate Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/professional-banking/" data-external="false">Professional Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/corporate-banking/explore-our-services/global-banking/" data-external="false">Global Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/" data-external="false">The Private Bank by Nevada State Bank </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/invest/enterprise-retirement-solutions/" data-external="false">Enterprise Retirement Solutions </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/bank/" class="main-menu__link main-menu__link_category" data-external="false">HOW CAN WE HELP YOU?<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/bank/checking/business-checking-comparison-table/" data-external="false">Compare Checking Accounts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/savings/business-savings-comparison-table/" data-external="false">Compare Savings Accounts </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/credit-cards/credit-card-comparison-table/" data-external="false">Compare Credit Cards </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/online-banking/" data-external="false">Enroll in Online Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/online-banking/direct-connect/" data-external="false">Sign Up for Bill Pay </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/bank/mobile-banking/" data-external="false">Learn About Mobile Banking </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/" data-external="false">Explore Business Banking Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/invest/" data-external="false">Explore Wealth Management Options </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">borrow<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/borrow/" class="main-menu__link main-menu__link_category" data-external="false">LOAN PRODUCTS &amp; SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/borrow/business-term-loans/" data-external="false">Business Term Loans </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/small-business-financing/" data-external="false">SBA Financing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/real-estate-financing/" data-external="false">Real Estate Financing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/business-lines-of-credit/" data-external="false">Business Lines of Credit </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/equipment-financing/" data-external="false">Equipment Financing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/ag-financing/" data-external="false">Agricultural Financing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/factoring/" data-external="false">Factoring </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/borrow/credit-cards/" class="main-menu__link main-menu__link_category" data-external="false">CREDIT CARDS<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/borrow/credit-cards/amazing-cash/" data-external="false">AmaZing Cash<sup>®</sup> for Business </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/credit-cards/amazing-rewards/" data-external="false">AmaZing Rewards<sup>®</sup> for Business </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/credit-cards/amazing-rate/" data-external="false">AmaZing Rate<sup>®</sup> for Business </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/credit-cards/commercial-card/" data-external="false">Commercial Card </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/borrow/" class="main-menu__link main-menu__link_category" data-external="false">HOW CAN WE HELP YOU?<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/borrow/small-business-financing/" data-external="false">Learn More About SBA Loans </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/real-estate-financing/" data-external="false">Finance a Building </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/equipment-financing/" data-external="false">Purchase or Finance Equipment </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/borrow/factoring/" data-external="false">Learn About Factoring </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/resources/get-started/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/appointments/" data-external="false">Schedule an Appointment </a>
+        </li>
+    
+        <li>
+            
+            <a href="/forms/business-interest-form/" data-external="false">Let Us Contact You </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/resources/business-centers/" data-external="false">Find a Business Center </a>
+        </li>
+    
+        <li>
+            
+            <a href="/branch-locator/" data-external="false">Find a Branch or ATM </a>
+        </li>
+    
+        <li>
+            
+            <a href="/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">manage<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/manage/" class="main-menu__link main-menu__link_category" data-external="false">BUSINESS BANKING SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/manage/" data-external="false">Overview of Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/collections-and-deposits/" data-external="false">Collections &amp; Deposits </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/disbursements/" data-external="false">Disbursements </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/employee-management/" data-external="false">Employee Management </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/information-reporting/" data-external="false">Information Reporting </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/fraud-prevention/" data-external="false">Fraud Prevention Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/liquidity-management/" data-external="false">Liquidity Management </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/manage/popular-services/" class="main-menu__link main-menu__link_category" data-external="false">POPULAR SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/manage/collections-and-deposits/merchant-services/" data-external="false">Card Processing Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/collections-and-deposits/remote-deposit/" data-external="false">Remote Deposits </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/employee-management/payroll-services/" data-external="false">Payroll Services </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/employee-management/payroll-services/business-online-banking-direct-deposit/" data-external="false">ACH Direct Deposit </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/liquidity-management/zero-balance-accounts/" data-external="false">Zero Balance Accounts </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/manage/" class="main-menu__link main-menu__link_category" data-external="false">HOW CAN WE HELP YOU?<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/manage/fraud-prevention/" data-external="false">Help Minimize Fraud Risk </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/disbursements/" data-external="false">Make Payments with Ease </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/collections-and-deposits/" data-external="false">Collect Receivables More Efficiently </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/information-reporting/" data-external="false">Access Account Info in a Timely Manner </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/manage/liquidity-management/" data-external="false">Make the Most of My Excess Cash Flow </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/resources/get-started/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/appointments/" data-external="false">Schedule an Appointment </a>
+        </li>
+    
+        <li>
+            
+            <a href="/forms/business-interest-form/" data-external="false">Let Us Contact You </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/resources/business-centers/" data-external="false">Find a Business Center </a>
+        </li>
+    
+        <li>
+            
+            <a href="/branch-locator/" data-external="false">Find a Branch or ATM </a>
+        </li>
+    
+        <li>
+            
+            <a href="/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">resources<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/about-us/reports/" class="main-menu__link main-menu__link_category" data-external="false">REPORTS &amp; INSIGHTS<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="https://nevadasmallbusiness.com/category/economic-briefing/" data-external="true">Monthly Economic Briefing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/apo/" data-external="false">A Positive Outlook </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/chairmans-update/" data-external="false">Chairman's Update </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/ceo-letter/" data-external="false">Letter from Our CEO </a>
+        </li>
+    
+        <li>
+            
+            <a href="https://nevadasmallbusiness.com/nevada-small-business-survey/" data-external="true">Small Business Survey </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/resources/family-business-resources/" class="main-menu__link main-menu__link_category" data-external="false">FAMILY BUSINESS RESOURCES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/resources/family-business-resources/" data-external="false">Family Business Resources </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/resources/family-business-resources/newsletter-archive/" data-external="false">Family Business Newsletters </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/resources/family-business-resources/on-demand-webinars/" data-external="false">Family Business Webinars </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/about-us/resources/" class="main-menu__link main-menu__link_category" data-external="false">RESOURCES &amp; TOOLS<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/business/business-complete/" data-external="false">Business Complete </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/resources/calculators/" data-external="false">Financial Calculators </a>
+        </li>
+    
+        <li>
+            
+            <a href="/personal/resources/faqs/" data-external="false">Frequently Asked Questions </a>
+        </li>
+    
+        <li>
+            
+            <a href="https://nevadasmallbusiness.com/" data-external="true">NevadaSmallBusiness.com </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/resources/newsletter/" data-external="false">eNewsletter Sign Up </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/resources/bank-holidays/" data-external="false">Bank Holidays </a>
+        </li>
+    
+        <li>
+            
+            <a href="/safety/" data-external="false">FDIC Insurance </a>
+        </li>
+    
+        <li>
+            
+            <a href="/it-matters/beneficialownership/" data-external="false">Beneficial Ownership </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/supplier-diversity/" data-external="false">Supplier Diversity </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-3">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/business/resources/get-started/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/appointments/" data-external="false">Schedule an Appointment </a>
+        </li>
+    
+        <li>
+            
+            <a href="/forms/business-interest-form/" data-external="false">Let Us Contact You </a>
+        </li>
+    
+        <li>
+            
+            <a href="/business/resources/business-centers/" data-external="false">Find a Business Center </a>
+        </li>
+    
+        <li>
+            
+            <a href="/branch-locator/" data-external="false">Find a Branch or ATM </a>
+        </li>
+    
+        <li>
+            
+            <a href="/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+							</ul>
+						</li>
+					</ul>
+				
+					<ul class="main-menu__user-segment ">
+						<li class="main-menu__dropdown">
+							<a href="#nogo" class="main-menu__user-segment-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">private<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+							<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_primary">
+
+								<!--*/ This one is section homepage for user segments on mobile */-->
+								<li class="visible-xs-block">
+									<a href="#" class="main-menu__link user-segment_follow-link" data-segment-link="private">Home<span class="main-menu__link-icon"><span></span><span></span></span></a>
+								</li>
+
+								
+								
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">about us<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/private/about-us/" class="main-menu__link main-menu__link_category" data-external="false">ABOUT US<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/" data-external="false">Meet the Team </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/" data-external="false">James Rensvold </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/kim-bartlett/" data-external="false">Kim Bartlett </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/nidhi-dadlani/" data-external="false">Nidhi &quot;Nikki&quot; Dadlani </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/richard-justiana/" data-external="false">Rich Justiana </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/sherilyn-laughlin/" data-external="false">Sherilyn Laughlin </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/erica-suciu/" data-external="false">Erica Suciu </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/donna-stanfel/" data-external="false">Donna Stanfel </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/jeffrey-williams/" data-external="false">Jeffrey Williams </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/tracy-winger/" data-external="false">Tracy Winger </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/about-us/meet-the-team/lindsay-leavitt/" data-external="false">Lindsay Leavitt </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/private/contact-us/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div>
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">our services<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/private/bank/" class="main-menu__link main-menu__link_category" data-external="false">OUR PRODUCTS &amp; SERVICES<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/bank/deposit/" data-external="false">Deposit Solutions </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/bank/personal-lending/" data-external="false">Lending Solutions </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/bank/mortgage/" data-external="false">Private Mortgage </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/bank/trust-services/" data-external="false">Trust Services </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/private/contact-us/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div>
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+									
+	<li class="main-menu__dropdown">
+		<a href="#nogo" class="main-menu__tab-button" data-toggle="main-nav-dropdown" role="button" aria-haspopup="true" aria-expanded="false">resources<span class="main-menu__dropdown-icon"><span></span><span></span></span></a>
+		<ul class="main-menu__dropdown-menu main-menu__dropdown-menu_secondary">
+			<li>
+				<div class="container-fluid">
+					<div>
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/private/resources/" class="main-menu__link main-menu__link_category" data-external="false">REPORTS &amp; INSIGHTS<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/resources/webinars/" data-external="false">Educational Webinars </a>
+        </li>
+    
+        <li>
+            
+            <a href="https://nevadasmallbusiness.com/category/economic-briefing/" data-external="true">Monthly Economic Briefing </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/resources/high-net-worth-report/" data-external="false">High Net Worth Report </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/resources/market-updates/" data-external="false">Market Updates </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/chairmans-update/" data-external="false">Chairman's Update </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/ceo-letter/" data-external="false">Letter from our CEO </a>
+        </li>
+    
+        <li>
+            
+            <a href="/about-us/reports/apo/" data-external="false">A Positive Outlook </a>
+        </li>
+    
+        <li>
+            
+            <a href="/private/resources/financial-insights/" data-external="false">Financial Insights </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div><div class="nav_link_list section">
+
+
+
+	
+    <a href="/private/contact-us/" class="main-menu__link main-menu__link_category" data-external="false">LET&#39;S GET STARTED<span class="main-menu__link-icon"><span></span><span></span></span></a>
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    <ul>
+        <li>
+            
+            <a href="/private/contact-us/" data-external="false">Contact Us </a>
+        </li>
+    </ul>
+</div><!-- end list_style_link-list --></div>
+<div class="nav_link_list section">
+
+
+
+
+
+
+<div class="list list_style_link-list list_main_nav">
+    
+</div><!-- end list_style_link-list --></div>
+
+</div>
+        </div><!-- end col-sm-4 -->
+        <div class="col-sm-4">
+            <div>
+</div>
+        </div><!-- end col-sm-4 -->
+    </div><!-- end row -->
+</div>
+
+</div>
+				</div>
+			</li>
+		</ul>
+	</li>
+
+								
+							</ul>
+						</li>
+					</ul>
+				
+
+				
+
+
+				<!-- Seconday Nav for Mobile -->
+				<ul class="main-menu__misc-links">
+					
+
+
+
+
+
+				</ul><!-- end main-menu__misc-links -->
+
+			</div><!-- end main-menu -->
+		</div><!-- end main-nav__menu -->
+
+		<div class="main-nav__right">
+			<!-- Search -->
+			<div class="main-nav__search">
+				<button type="button" class="main-nav__search-button" data-toggle="main-nav-dropdown" data-target="#main-search" aria-labelledby="main-nav__search-button__icon" aria-expanded="false">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="main-nav__search-button__icon" focusable="false"><title id="main-nav__search-button__icon">Search the website</title><path d="M61.83,56.17l-13-13A4,4,0,0,0,45.9,42l-4.52-4.52a22,22,0,1,0-3.89,3.89L42,45.9a4,4,0,0,0,1.16,2.93l13,13a4,4,0,0,0,5.66-5.66ZM7,24A17,17,0,1,1,24,41,17,17,0,0,1,7,24Z"/></svg>
+					<span class="main-nav__close-icon"><span></span><span></span></span>
+				</button><!-- end main-nav__search-button -->
+
+				<div id="main-search" class="main-search">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<p class="main-search__heading">What Can We Help You Find?</p>
+								<form class="zbc-search-form" data-search-url="/search.html" data-aa-searchtrack="desktop site search">
+									<div class="input-group">
+										<input type="text" class="form-control main-search__input zbc-search-query" id="main-search__input" placeholder="Search" aria-label="Search"/>
+										<span class="input-group-btn">
+												<button type="submit" class="main-search__button"><img src="/content/dam/zbc/commons/layout-images/icon_search_white.svg" alt="Search the site"/>
+											</button>
+										</span><!-- end input-group-btn -->
+									</div><!-- end input-group -->
+								</form>
+							</div><!-- end col-sm-8 -->
+						</div><!-- end row -->
+					</div>
+				</div><!--  end main-search -->
+			</div><!--  end main-nav__search -->
+
+			<!-- Login -->
+			<div style="display:inline-block; position: relative;">
+
+
+
+
+    <button type="button" aria-label="Login" class="main-nav__login-button focus-visible-login" data-toggle="focus-login">
+        <svg class="main-nav__login-button__icon" role="img" focusable="false" alt="null" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#ffffff"><path d="M50,29H49V19A17,17,0,0,0,32,2h0A17,17,0,0,0,15,19V29H14a5,5,0,0,0-5,5V57a5,5,0,0,0,5,5H50a5,5,0,0,0,5-5V34A5,5,0,0,0,50,29ZM34,45.45V52a1,1,0,0,1-1,1H31a1,1,0,0,1-1-1V45.45a4,4,0,1,1,4,0ZM43,29H21V18.67a11,11,0,0,1,11-11h0a11,11,0,0,1,11,11Z"/></svg>
+        <span class="main-nav__login-button__label" aria-hidden="true">SIGN IN</span>
+    </button><!-- end main-nav__login-button -->
+
+
+
+
+</div>
+
+		</div><!-- end main-nav__right -->
+
+	</nav><!-- end Main Nav -->
+	</div>
+
+</header>
+    <!--<script src="/bin/zbc/whitelist.js/nsb/nsbank/"></script>-->
+
+
+
+<script>
+    markUserTime('header loaded');
+</script>
+        
+
+<div class="logout-alert-banner logout-alert-banner--hidden">
+
+    <div class="logout-alert-banner__timeout logout-alert-banner--hidden">
+        <i class="logout-alert-bannner__icon fa fa-sign-out" aria-hidden="true" focusable="false"></i>
+        
+        <div class="logout-alert-bannner__text-container">
+
+
+<div class="enable_disclosures">
+    
+    
+    <p>Your session has expired and you have been successfully logged out. Click <a data-external="false" href="/">here</a> if you would like to sign back in.</p>
+ 
+</div></div>
+    </div>
+    <div class="logout-alert-banner__logout logout-alert-banner--hidden">
+        <i class="logout-alert-bannner__icon fa fa-sign-out" aria-hidden="true" focusable="false"></i>
+        
+        <div class="logout-alert-bannner__text-container">
+
+
+<div class="enable_disclosures">
+    
+    
+    <p>You have successfully signed out. Click <a data-external="false" href="/">here</a> if you would like to sign back in.</p>
+ 
+</div></div>
+    </div>
+
+    <a class="logout-alert-banner__close-button" role="button" aria-label="close" href="#">
+        <i class="logout-alert-banner__close-icon fa fa-times" aria-hidden="true" focusable="false"></i>
+    </a>
+</div>
+        
+        <script>
+            markUserTime('Template Header Loaded');
+        </script>
+
+        <!-- <div data-sly-resource="main" data-sly-unwrap></div> -->
+<div class="content-area" id="content-area"><div class="carousel_login_v2 carousel_login section">
+
+
+<section class="homepage-canvas" data-play-speed="4">
+    <div class="homepage-slider clearfix">
+        
+            
+            <div class="slide" style="background-image: url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2f banners\2fhomepage-banners1\2fpersonal\2f agility-credit-card-homepage-banner.jpg);" title="Cash Back that Won&#39;t Slow You Down">
+                <img src="nsvimg/agility-credit-card-homepage-banner.jpg" height="999" width="2800" alt="Cash Back that Won&#39;t Slow You Down - Enjoy 1.5% cash back on all purchases and a $200 intro bonus with the Agility Cash Credit Card." title="Cash Back that Won&#39;t Slow You Down"/>
+                <div class="slide-content">
+                    <div class="slide-detail">
+                        
+                        <h2>Cash Back that Won't Slow You Down </h2>
+                        
+                        <p>Enjoy 1.5% cash back on all purchases and earn a $200 intro bonus with the Agility Cash Credit Card. </p>
+                        
+                        <a href="https://www.nsbank.com/it-matters/agility-cash/?icid=aff-NSB_stsctn-Prsnl_lctn-HpBnr_prod-CnsmrAglty_lnchdt-202209_cmpgn-CnsmrCC_dvsn-Bnkcrd_dscrptn-Acquisition-Q4-2022" data-external="true" class="btn full">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        
+    
+        
+            
+            <div class="slide" style="background-image: url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2f banners\2fhomepage-banners1\2fpersonal\2f arm-buying-power-2800x1000.jpg);" title="Adjustable Rate Mortgages">
+                <img src="nsvimg/arm-buying-power-2800x1000.jpg" height="999" width="2800" alt="Adjustable Rate Mortgage" title="Adjustable Rate Mortgages"/>
+                <div class="slide-content">
+                    <div class="slide-detail">
+                        
+                        <h2>Adjustable Rate Mortgages </h2>
+                        
+                        <p>How it may help lower your monthly payments. </p>
+                        
+                        <a href="/blog/two-cents-blog/articles/2022/may/is-an-adjustable-rate-mortgage-right-for-you/" data-external="false" class="btn full">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <div class="homepage-canvas-content">
+        <div class="center">
+            <div class="row">
+                <div class="column md-6 md-push-6">
+                    <div class="vertical-container">
+                        <div class="vertical-center login-vcenter">
+                            
+                                <div class="carousel-login-container">
+
+
+
+
+<div class="login login-v2">
+    <nav class="login-tabs row no-spacing" id="js-login-cookie">
+        
+            
+                <span class="column xs-6 active first " id="tab-Personal"><span class="sr-only">active</span>Personal</span>
+            
+        
+            
+                <span class="column xs-6 not-active  last" id="tab-Business"><span class="sr-only"></span>Business</span>
+            
+        
+    </nav>
+
+
+    <div class="login-form-container clearfix">
+        
+            
+                <div class="login-form login-Personal user_landing" style="display:block;"><div class="personal_login section">
+
+
+
+<div id="personalTab" class="tab active personal-login-container">
+    <div id="OBPersonalBanking">
+
+
+        <!--*/ Generate the Domain for the form action based on the affiliate and the environment */-->
+        <form id="personalForm" action="https://digitalbanking.nsbank.com/d3rest/v4/login/simple" method="post">
+            <input type="hidden" id="t_id" value="7d07376a55d32731327a55e248bdb298" name="t_id"/>
+            <div class="form-group">
+                <label for="publicCred1_P">Username</label>
+                <input type="text" class="form-control" id="publicCred1_P" name="username" required aria-required="true"/>
+            </div>
+            <div class="form-group">
+                <label for="privateCred1_P">Password</label>
+                <input type="password" class="form-control" id="privateCred1_P" name="password" autocomplete="off" required aria-required="true"/>
+                <div class="capsWarning"><i class="fa fa-info-circle" aria-hidden="true"></i>Caps Lock is on.</div>
+            </div>
+
+            
+            <div class="passwordOptions">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="rememberMe_P"/> Remember Me
+                    </label>
+                </div>
+
+                
+                <div class="login-need-help">
+                    <a href="/personal/resources/faqs/sign-on-help/">Need Help?</a>
+                </div>
+            </div>
+
+            <div class="login-button-container">
+                <button type="submit" class="btn login-btn" data-aa-logintype="personal" data-aa-buttonclick="personal login">Sign In</button>
+            </div>
+
+            <input type="hidden" name="pm_fp" id="pm_fp" value=""/>
+            <input type="hidden" name="appId" id="appId" value="S137-IB-PB"/>
+
+            <!--*/ Generate the Afiiliate ID for the value of this input */-->
+            <input type="hidden" name="domainId" id="domainId" value="nsb"/>
+
+        </form>
+
+        <div class="enroll-container">
+            <label for="signup">you don't have an account?</label>
+            <a class="enroll-btn" href="signup.html">Sign up for Online Banking</a>
+        </div>
+
+    </div>
+
+</div></div>     
+        
+            
+                <div class="login-form login-Business user_landing"><div class="business_login section">
+
+
+
+<div id="businessTab" class="tab">
+
+        
+        
+
+        
+        
+            <div id="OBBusinessBanking" class="d3-business-banking">
+                <div class="login-business-banner">
+                    <div class="login-business-banner__new">
+                        <div class="login-business-banner__text">
+                            <p class="login-business-banner__paragraph"><strong>Welcome to the new Digital Banking Sign-in options.</strong> Enter your Username in the new format or select Legacy Sign in to enter your Company ID and Login ID in separate fields.</p>
+                        </div>
+                    </div>
+                    <div class="login-business-banner__legacy-initial">
+                        <div class="login-business-banner__text">
+                            <p class="login-business-banner__paragraph"><strong>Enter your Company ID, Login ID, and Password to sign in</strong> to the new Digital Banking experience. Select CONTINUE.</p>
+                            <p class="login-business-banner__paragraph"><a class="login-business-banner__link" href="/other/reset-business-password/">Learn More</a></p>
+                        </div>
+                    </div>
+                    <div class="login-business-banner__legacy-confirmation">
+                        <div class="login-business-banner__text">
+                            <p class="login-business-banner__paragraph"><strong>Note your newly formatted Username.</strong> Your Password has not changed. Keep a record of this Username and check the Remember Me box for the next time you sign in.</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="businessFormD3" action="https://digitalbanking.nsbank.com/d3rest/v4/login/simple" method="post">
+                    <input type="hidden" id="t_id" value="7d07376a55d32731327a55e248bdb298" name="t_id"/>
+
+                    <div class="login-business-toggle">
+                        <div class="login-business-toggle__switch">
+                            <input id="loginBusinessToggle" type="checkbox" class="login-business-toggle__input"/>
+                            <label for="loginBusinessToggle" class="login-business-toggle__label">
+                                <span class="login-business-toggle__label-unchecked">New Sign In</span>
+                                <span class="login-business-toggle__label-checked">Legacy Sign In</span>
+                            </label>
+                        </div>
+                        <div class="login-business-toggle__placeholder">Sign In</div>
+                    </div>
+
+                    <div class="login-business-username">
+                        <div class="login-business-username__new">
+                            <div class="form-group">
+                                <label for="publicCred1_B">Username</label>
+                                <input type="text" class="form-control" id="publicCred1_B" name="username" placeholder="CompanyID-LoginID or Username" required aria-required="true"/>
+                            </div>
+                        </div>
+                        <div class="login-business-username__legacy">
+                            <div class="form-group">
+                                <label for="loginBoxLegacyCompanyID">Company ID</label>
+                                <input type="text" class="form-control" id="loginBoxLegacyCompanyID" name="publicCred2" required aria-required="true"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginBoxLegacyLoginID">Login ID</label>
+                                <input type="text" class="form-control" id="loginBoxLegacyLoginID" name="publicCred1" required aria-required="true"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="privateCred1_B">Password</label>
+                        <input type="password" class="form-control" id="privateCred1_B" name="password" autocomplete="off" required aria-required="true"/>
+                        <div class="capsWarning"><i class="fa fa-info-circle" aria-hidden="true"></i>Caps Lock is on.</div>
+                    </div>
+                    <div class="passwordOptions">
+                        <div class="checkbox login-remember-me">
+                            <label>
+                                <input type="checkbox" id="rememberMe_B"/> Remember Me
+                            </label>
+                        </div>
+                        <div class="login-need-help">
+                            <a href="/other/reset-business-password/">Need Help?</a>
+                        </div>
+                    </div>
+
+                    <div class="login-button-container">
+                        <button type="submit" class="btn login-btn login-button__sign-in" data-aa-logintype="business" data-aa-buttonclick="business login">Sign In</button>
+                        <button type="button" class="btn login-btn login-button__continue">Continue</button>
+                    </div>
+                    <input type="hidden" name="pm_fp" id="pm_fp" value=""/>
+                    <input type="hidden" name="appId" id="appId" value="S137-IB-BB"/>
+                    <input type="hidden" name="domainId" id="domainId" value="nsb"/>
+                </form>
+            </div>
+        
+
+</div></div>
+<div class="text parbase section">
+
+
+<div class="   enable_disclosures">
+<p><a class="treasury" data-external="true" href="https://securentrycorp.nsbank.com/">Login to Treasury Gateway</a></p>
+<p class="desktop-login-toggle"><a data-external="false" href="https://www.nsbank.com/?showloginmobile=true">Desktop Login</a></p>
+
+</div></div>
+
+</div>
+            
+        
+    </div>
+
+    <div class="login-extras">
+        
+        <div>
+</div>
+    </div>
+</div>
+
+
+</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="column md-6 md-pull-6">
+                    <div class="vertical-container">
+                        <div class="vertical-center">
+                            <div class="slide-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</div>
+<div class="page_section_block section">
+          
+<section class="content-block  goldBG" style="border-width: 0px; 
+		margin: 0px 0px 0px 0px;
+		background-image: url(); 
+		overflow: hidden;
+		border-style: none;">  
+
+
+	<div class="center" style="padding: 0px 0px 0px 0px; ">
+
+		<div class="row">
+        	<div class="col-xs-12 1  " style="text-align: left;">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="heading aem-GridColumn aem-GridColumn--default--12"><!-- Place holder for Edit Header component-->
+
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+
+<!-- Reading values from dialog -->
+
+<h3 class="white-text  text-center  clearfix enable_disclosures" style="padding: 5px 5px 5px 5px; margin: 0px 0px 0px 0px;border-style: solid; border-width: 0;">READY TO MEET WITH A BANKER? CLICK TO <a href="https://www.nsbank.com/branch-locator/">SCHEDULE AN APPOINTMENT.</a>  </h3></div>
+
+    
+</div>
+</div>
+        	    
+        	
+        </div>
+    </div>
+</section>        </div>
+<div class="page_section_block section">
+          
+<section class="content-block  whiteBG" style="border-width: 0px; 
+		margin: 0px 0px 0px 0px;
+		background-image: url(); 
+		overflow: hidden;
+		border-style: none;">  
+
+
+	<div class="center" style="padding: 20px 0px 20px 0px; ">
+
+		<div class="row">
+        	<div class="col-xs-12 1  " style="text-align: left;">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--phone--12 ">
+    
+    <div class="heading aem-GridColumn aem-GridColumn--default--12"><!-- Place holder for Edit Header component-->
+
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+
+<!-- Reading values from dialog -->
+
+<h1 class="darkGreyFont  text-center  clearfix enable_disclosures" style="padding: 5px 5px 5px 5px; margin: 0px 0px 0px 0px;border-style: solid; border-width: 0;">HOW CAN WE HELP YOU TODAY?  </h1></div>
+<div class="text parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="   enable_disclosures">
+<p></p>
+</div></div>
+<div class="left needs_based_nav aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<a data-aa-buttonclick="compare personal checking | personal homepage | nbn | " href="/personal/bank/checking/checking-comparison-table/" data-external="false" class="text-center">
+    
+        <img src="nsvimg/checking-icon.png" alt="Compare Checking Accounts" width="107" height="84"/>
+    
+    
+    <span>Compare Checking Accounts</span>  
+</a></div>
+<div class=" left needs_based_nav aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<a data-aa-buttonclick="find a branch | personal homepage | nbn | " href="/branch-locator/" data-external="false" class="text-center">
+    
+        <img src="nsvimg/branch-icon.png" alt="Find a Branch" width="107" height="84"/>
+    
+    
+    <span>Find a Branch</span>  
+</a></div>
+<div
+            
+class= "left needs_based_nav aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<a data-aa-buttonclick="get a home loan | personal homepage | nbn | " href="/personal/borrow/residential-mortgage/" data-external="false" class="text-center">
+    
+        <img src="nsvimg/mortgage-icon.png" alt="Get A Home Loan" width="107" height="84"/>
+    
+    
+    <span>Get A Home Loan</span>  
+</a></div>
+<div class="left needs_based_nav aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<a data-aa-buttonclick="credit cards | personal homepage | nbn | " href="/personal/borrow/credit-cards/" data-external="false" class="text-center">
+    
+        <img src="nsvimg/credit-card-icon.png" alt="Credit Cards" width="107" height="84"/>
+    
+    
+    <span>Compare Credit Cards</span>  
+</a></div>
+<div class="left needs_based_nav aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<a data-aa-buttonclick="schedule an appt | personal homepage | nbn | " href="/branch-locator/" data-external="false" class="text-center">
+    
+        <img src="nsvimg/appointment-icon.png" alt="Schedule an Appointment" width="107" height="84"/>
+    
+    
+    <span>Schedule an Appointment</span>  
+</a></div>
+<div class="left needs_based_nav aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--6 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--2">
+<a data-aa-buttonclick="business banking | personal homepage | nbn | " href="/business/" data-external="false" class="text-center">
+    
+        <img src="nsvimg/small-business-icon.png" alt="Business Banking Services" width="107" height="84"/>
+    
+    
+    <span>Business Banking Services</span>  
+</a></div>
+
+    
+</div>
+</div>
+        	    
+        	
+        </div>
+    </div>
+</section>        </div>
+<div class="product_banner section">
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="product-canvas bg-light-blue content-block">
+	<div class="center">
+		<div class="row">
+			<div class="column xs-12 sm-6 sm-push-6 full-image">
+				
+                	<img src="nsvimg/700x300-auto-image-product.jpg" alt="Lower Your Auto Loan Payments" title="Lower Your Auto Loan Payments"/>
+                
+			</div>
+			<div class="column xs-12 sm-6 sm-pull-6 product-canvas-detail">
+				<!-- if super script is present then translate it -->
+				
+				<!-- if disclosure script is present then translate it -->
+				
+				
+                	<h2 class="enable_disclosures">LOWER YOUR AUTO LOAN PAYMENTS<span class='cite-tag-container'>[cite::60::cite]</span>  </h2>
+                
+                <!-- if super script is present then translate it -->
+				
+                <!-- if disclosure script is present then translate it -->
+				
+                
+                <!-- if super script is present then translate it -->
+				
+                <!-- if disclosure script is present then translate it -->
+				
+                
+                	<p class="enable_disclosures">We offer competitive financing for almost any type of vehicle, new or used. We also provide pre-approvals to make car shopping easy, and we're happy to refinance current auto loans.
+  </p>
+				
+				
+					<!-- if super script is present then translate it -->
+					
+					<!-- if disclosure script is present then translate it -->
+					
+					
+                    
+                    
+                    	<a data-aa-buttonclick="auto loans | personal homepage | product banner | auto loans" class="btn enable_disclosures" href="/personal/borrow/auto-and-vehicle-loans/" data-external="false">LEARN MORE  </a>
+					
+					
+				
+				
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<div class="page_section_block section">
+          
+<section class="content-block  " style="border-width: 0px; 
+		margin: 0px 0px 0px 0px;
+		background-image: url(); 
+		overflow: hidden;
+		border-style: none;">  
+
+
+	<div class="center" style="padding: 20px 0px 20px 0px; ">
+
+		<div class="row">
+        	<div class="col-xs-12 1  " style="text-align: left;">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="heading aem-GridColumn aem-GridColumn--default--12"><!-- Place holder for Edit Header component-->
+
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+
+<!-- Reading values from dialog -->
+
+<h2 class="darkGreyFont  text-center  clearfix enable_disclosures" style="padding: 5px 5px 5px 5px; margin: 0px 0px 0px 0px;border-style: solid; border-width: 0;">NEWS YOU CAN USE  </h2></div>
+<div class="text parbase aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="   enable_disclosures">
+<p></p>
+</div></div>
+<div class="featured_block aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+ <!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+
+
+
+    <div class="featured-block style2">
+        <div class="featured-content blue">
+            <div class="top">
+                <div class="img-container" style="background-image: url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2fglobal\2f about-us\2f chairmans-update.jpg);"></div>
+            </div>
+			
+            <h4 class="enable_disclosures">Chairman's Update  </h4>
+			
+            <p class="enable_disclosures">Celebrating Democracy  </p>
+            
+            <a aria-label="Read the Chairman&#39;s Update" class="btn enable_disclosures" href="/about-us/reports/chairmans-update/" data-external="false" data-aa-buttonclick="chairmans update | personal homepage | feature block | read more">READ MORE   </a>
+        </div>
+    </div>
+</div>
+<div class="featured_block aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+ <!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+
+
+
+    <div class="featured-block style2">
+        <div class="featured-content blue">
+            <div class="top">
+                <div class="img-container" style="background-image: url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2fglobal\2f about-us\2fpresidents-letter.jpg);"></div>
+            </div>
+			
+            <h4 class="enable_disclosures">LETTER FROM OUR CEO  </h4>
+			
+            <p class="enable_disclosures">Representing Nevada Businesses in Washington, DC  </p>
+            
+            <a aria-label="Read the Letter from Our CEO" class="btn enable_disclosures" href="/about-us/reports/ceo-letter/" data-external="false" data-aa-buttonclick="ceo letter | personal homepage | feature block | read more">Read more  </a>
+        </div>
+    </div>
+</div>
+<div class="featured_block aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+<!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+ <!-- if super script is present then translate it -->
+
+<!-- if disclosure script is present then translate it -->
+
+
+
+
+    <div class="featured-block style2">
+        <div class="featured-content blue">
+            <div class="top">
+                <div class="img-container" style="background-image: url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2fglobal\2f about-us\2freports\2f apo\2f apo-banner.jpg);"></div>
+            </div>
+			
+            <h4 class="enable_disclosures">A POSITIVE OUTLOOK  </h4>
+			
+            <p class="enable_disclosures">Brian Gordon, Applied Analysis: Housing Hysteria  </p>
+            
+            <a aria-label="Read A Positive Outlook" class="btn enable_disclosures" href="/about-us/reports/apo/" data-external="false" data-aa-buttonclick="a positive outlook | personal homepage | feature block | read more">READ MORE  </a>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+</div>
+        	    
+        	
+        </div>
+    </div>
+</section>        </div>
+<div class="page_section_block section">
+          
+<section class="content-block  " style="border-width: 0px; 
+		margin: 0px 0px 0px 0px;
+		background-image: url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2flayout\2f bg-silver-dots.jpg); 
+		overflow: hidden;
+		border-style: none;">  
+
+
+	<div class="center" style="padding: 20px 0px 20px 0px; ">
+
+		<div class="row">
+        	<div class="col-xs-12 1  " style="text-align: left;">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="promo_block parbase aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+<div class="promo-box blue imgPos-right">
+    <div class="row">
+    	<div class="column xs-12 sm-5 promo-img" style="background:url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2fpb\2fpb-private-bank.jpg) no-repeat left center; background-size:cover;">
+    		<div class="promo-image">
+    			
+    			
+    		</div>
+    	</div>
+    	<div class="column xs-12 sm-7 promo-copy">
+    		<div class="promos-content ">
+    			<h2>VISIT THE PRIVATE BANK </h2>
+                <h4>by Nevada State Bank</h4>
+                <p>From day-to-day family transactions to long-term financial strategies, the Private Bank by Nevada State Bank gives you more time to spend on the things that really matter.</p>
+
+                
+                    <div class="promo-btn inside">
+                        <a class="btn" data-aa-buttonclick="private bank | personal homepage | promo block | learn more" href="/private/" target="_blank">
+                            
+                            
+                                LEARN MORE
+                                
+                                    <i class="fa fa fa-angle-double-right,fa fa-angle-double-right"></i>
+                                
+                                
+                            
+                        </a>
+                    </div>
+                
+                
+    		</div>
+    	</div>
+    </div>
+</div>
+</div>
+<div class="promo_block parbase aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+<div class="promo-box blue imgPos-right">
+    <div class="row">
+    	<div class="column xs-12 sm-5 promo-img" style="background:url(\2f content\2f dam\2fnsb\2fnsbank\2fimages\2fpb\2f 2021-best-in-state-prromo-block.jpg) no-repeat left center; background-size:cover;">
+    		<div class="promo-image">
+    			
+    			
+    				<img/>
+    			
+    		</div>
+    	</div>
+    	<div class="column xs-12 sm-7 promo-copy">
+    		<div class="promos-content ">
+    			<h2>Thanks for Voting Us Best in State!</h2>
+                <h4></h4>
+                <p>We believe it takes the best clients to be voted Best in State for five years straight. Thank you for all your support and votes. We appreciate you!</p>
+
+                
+                    <div class="promo-btn inside">
+                        <a class="btn" data-aa-buttonclick="best in state | personal homepage | promo block | learn more" href="https://www.nsbank.com/about-us/newsroom/press-releases/12142021-best-in-state/" target="_blank">
+                            
+                            
+                                LEARN MORE
+                                
+                                    <i class="fa fa fa-angle-double-right,fa fa-angle-double-right"></i>
+                                
+                                
+                            
+                        </a>
+                    </div>
+                
+                
+    		</div>
+    	</div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+</div>
+        	    
+        	
+        </div>
+    </div>
+</section>        </div>
+<div class="important_details parsys section"><div class="disclosures-display-container content-block center">
+    <h3>Disclosures</h3>
+    <div class="disclosures-container" data-aa-disclosure="footer">
+
+    </div>
+</div></div>
+
+</div>
+
+
+        
+        <script>
+            markUserTime('Template Content Loaded');
+        </script>
+        <div class="footer"><div class="footer section">
+<footer class="footer">
+	<section class="top-footer">
+		<div class="center">
+			<div class="row">
+				<div class="column md-5">
+					<div>
+
+	<a href="/" data-external="false">
+	    <img src="nsvimg/logo-nsb-footer.png" alt="Nevada State Bank Home" title="Nevada State Bank " class=" clearfix" style="border-style: solid; border-width: 0px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"/>
+	</a>
+
+</div>
+				</div>
+				<div class="column md-5 md-offset-7">
+					<div>
+<div class="newsletter">
+    
+    
+        <h4>SUBSCRIBE TO OUR NEWSLETTERS</h4>
+    
+     
+    <form id="subscriptionForm" class="honeypot-form" method="post" action="https://www.pages05.net/demo-nevadastatebank/newsletter-subscription/index" pageid="14462510" siteid="675633" parentpageid="14462509">
+        
+          
+        
+        <div class="input-box">  
+        
+            <label for="control_EMAIL">Enter your email address</label>
+	        <input name="Email" id="control_EMAIL" type="email" class="text" placeholder="EG: name@domain.com"/>
+            <button aria-label="Submit" id="subFormSubmitButton" name="subFormSubmitButton" type="submit"><i class="fa fa-angle-right"></i></button>
+        </div>  
+    
+    	<!-- Hidden Fields for Honey-pot, should be empty and hpTestText -->      
+    	<input type="hidden" class="hp-empty-test" value=""/>
+    	<input type="hidden" class="hp-full-test" value="hpTestText"/> 
+    	<input type="hidden" name="formSourceName" value="StandardForm"/><!-- DO NOT REMOVE HIDDEN FIELD sp_exp --><input type="hidden" name="sp_exp" value="yes"/>
+      	    
+    </form>  
+      
+    
+    
+    <a href="https://mybank.nsbank.com/subscriptions" data-external="true">Manage Your Subscriptions</a>
+</div></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bottom-footer">
+		<div class="center">
+			<div class="row">
+				<div class="column md-12">
+					<div>
+
+
+    <ul class="nav">
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="/about-us/" alt="About Us" data-external="false">
+                    About Us 
+                </a>
+            
+
+        </li>
+    
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="/contact-us/" alt="Contact Us" data-external="false">
+                    Contact Us 
+                </a>
+            
+
+        </li>
+    
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="/personal/resources/faqs/" alt="FAQs" data-external="false">
+                    FAQs 
+                </a>
+            
+
+        </li>
+    
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="/privacy/" alt="Privacy &amp; Security" data-external="false">
+                    Privacy &amp; Security 
+                </a>
+            
+
+        </li>
+    
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="/agreement-center/" alt="Agreement Center" data-external="false">
+                    Agreement Center 
+                </a>
+            
+
+        </li>
+    
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="https://careers.nsbank.com" alt="Careers" data-external="true">
+                    Careers 
+                </a>
+            
+
+        </li>
+    
+        <li>
+			
+            
+
+            
+            
+
+            
+            
+                <a href="/sitemap/" alt="Site Map" data-external="false">
+                    Site Map 
+                </a>
+            
+
+        </li>
+    </ul>
+</div>
+				</div>
+            </div>
+            <div class="row">
+				<div class="column md-12">
+					<span>Follow us on: </span>
+
+
+
+
+<nav class="social-media">
+    
+        <a href="https://www.facebook.com/NevadaStateBank" data-external="true">  
+            <i class="fa fa fa-facebook fa-3x"><span class="adaOffScreen">Facebook</span></i>
+        </a>
+     
+
+    
+        <a href="https://www.linkedin.com/company/41133/" data-external="true">  
+            <i class="fa fa fa-linkedin fa-3x"><span class="adaOffScreen">Linkedin</span></i>
+        </a>
+     
+
+    
+        <a href="https://twitter.com/NevadaStateBank" data-external="true">  
+            <i class="fa fa fa-twitter fa-3x"><span class="adaOffScreen">Twitter</span></i>
+        </a>
+     
+
+    
+        <a href="https://www.youtube.com/user/NevadaStateBank" data-external="true">  
+            <i class="fa fa fa-youtube-play fa-3x"><span class="adaOffScreen">Youtube</span></i>
+        </a>
+     
+
+    
+        <a href="https://www.instagram.com/nevadastatebank/" data-external="true">  
+            <i class="fa fa fa-instagram fa-3x"><span class="adaOffScreen">nsb instagram</span></i>
+        </a>
+     
+</nav>
+  
+
+
+				</div>
+			</div>
+		</div>
+		<div class="center clearfix">
+    		
+
+
+<div class="   enable_disclosures">
+<p>Nevada State Bank, a division of Zions Bancorporation, N.A. <a data-external="false" href="/safety/">Member FDIC</a> | <img src="/content/dam/nsb/nsbank/images/logos/icon-ehl-footer.png" alt="equal housing lender" width="20" height="15"/> Equal Housing Lender | NMLS #467014</p>
+<p><a href="https://datarights.zionsbancorp.com/" title="Data collection and rights" data-external="true">Data Collection and Rights</a> | <a href="https://datarights.zionsbancorp.com/" title="Do not sell my personal information" data-external="true">Do Not Sell or Share My Personal Information</a><br />
+</p>
+<p>© 2023 Zions Bancorporation, N.A. All rights reserved.</p>
+
+</div>
+		</div>
+	</section>
+</footer></div>
+<div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="ifooter iparsys parsys"></div>
+</div>
+</div>
+
+    </div>
+</div>
+
+
+        
+        
+
+
+
+<script>
+    markUserTime('NSB Global Footer Loaded');
+</script>
+
+
+
+    
+    
+<script type="text/javascript" src="/etc/clientlibs/zbc/commons/vendor/ally.min.24cbfeb759b74c883433fde2a3d60d07.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/zbc/commons/vendor/browser_report.min.1ecf76524cbee0832dcb8c9d6d49f3c1.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/zbc/commons/vendor/spinner.min.72ff835d076c1e45502b714ca9c779b2.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/nsb/nsbank/clientlibs/nsb_global.min.ef8e97c9eafa34331f2998cef576f2af.js"></script>
+
+
+
+
+
+
+  
+    
+<script type="text/javascript" src="/etc.clientlibs/nsb/nsbank/clientlibs/nsb_page_landing.min.d41d8cd98f00b204e9800998ecf8427e.js"></script>
+
+
+
+
+
+
+<script>
+    markUserTime('NSB Template Footer Loaded');
+</script>
+
+        
+        
+
+
+
+    <script type="text/javascript">_satellite.pageBottom();</script>
+
+
+
+
+
+    
+    <p style='background:url(https://w3.nsbank.com/fp/clear.png?org_id=dib8erid&session_id=7d07376a55d32731327a55e248bdb298&pageid=400&m=1)'></p><img src='https://w3.nsbank.com/fp/clear.png?org_id=ifpddr9y&session_id=7d07376a55d32731327a55e248bdb298&pageid=400&m=2'/><script src='https://w3.nsbank.com/fp/check.js?org_id=ifpddr9y&session_id=7d07376a55d32731327a55e248bdb298&pageid=400'></script>
+
+    
+    <script>
+        markUserTime('footerInjections');
+    </script>
+
+
+
+<script>
+    markUserTime('global Footer');
+</script>
+
+
+    
+    
+<script type="text/javascript" src="/etc/clientlibs/zbc/commons/vendor/analytics.min.5e6ee608b103c42623641d5f06c02a09.js"></script>
+
+
+
+
+
+        
+        
+
+  
+    
+
+
+
+
+    <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=835034667" async></script></body>
+
+</html>
